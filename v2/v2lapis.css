@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/*
+Theme Name: k-hora
+*/
+/********************************/
+/*************"基本"*************/
+/********************************/
+*{font-family:Verdana;color:#ccc;margin:0;padding:0}
+ul,li{list-style-type:none}
+a:link,a:visited{color: #eec ; text-decoration: underline }
+a:active,a:hover{color: #f93 ; text-decoration: underline }
+strong{font-weight:bold;font-style:normal;color:#fff;}
+p{font-size:12pt;line-height:1.5em}
+/**********************************/
+/************"テーブル"************/
+/**********************************/
+table{/*テーブルの基本はcollapse*/
+ border-collapse : collapse ; 
+}
+table.nl{/*司教スキル頁のスキル表に使用*/
+ text-align:center;
+ border:2px solid #999999;
+}
+table.nl tr{/*同じく司教スキル頁のスキル表に使用*/
+ border:2px solid #999999;
+}
+table.nl tr td,table.nl tr th{/*さらに同じく司教スキル頁のスキル表に使用*/
+ padding:3px 9px;
+ border:2px solid #999999;
+}
+table.sute,table.sute tr,table.sute tr td{/*司教ステ振り頁のスキル表に使用*/
+ text-align:center;
+ font-size:x-small;
+ padding:2px 3px;
+ border:2px solid #999999;
+}
+table.list,table.list tr,table.list tr td{/*データリストに使用*/
+ text-align:left;
+ font-size:10px;
+ padding:2px 3px;
+ border:3px solid #000000;
+ background-color:#555555;
+}
+/*listの色分け*/
+table.list tr td.l-0{background-color:#f0f000;font-weight:bold;color:#000000;
+width:1em;}
+table.list tr.l-1 td{background-color:#b97a00;font-weight:bold;color:#000000;}
+table.list tr.l-1 td.l-kado{background-color:#000000;}
+table.list tr td.l-2{background-color:#555555;font-weight:bold;}
+table.list tr td.l-3{background-color:#000000;color:#aaaaaa;}
+table.list2,table.list2 tr,table.list2 tr td,table.list2 tr th{/*データリストに使用*/
+ text-align:left;
+ font-size:10px;
+ padding:1px 1px;
+ border:2px solid #000000;
+ background-color:#555555;
+}
+/*list2の色分け*/
+table.list2 tr td.l-0{background-color:#f0f000;font-weight:bold;color:#000000;
+width:1em;text-align:center;vertical-align:top;}
+table.list2 tr.l-1 td{background-color:#b97a00;font-weight:bold;color:#000000;}
+table.list2 tr.l-1 td.l-kado{background-color:#000000;}
+table.list2 tr TH{font-weight:bold;}
+/*list3の色分け**ドロップデータ用*/
+table.list2 tr td.l-0{background-color:#f0f000;font-weight:bold;color:#000000;
+width:1em;text-align:center;vertical-align:top;}
+table.list2 tr TH{background-color:#b97a00;font-weight:bold;color:#000000;}
+/********************************/
+/************"枠組み"************/
+/********************************/
+body{
+background:#000;
+}
+h1{
+position:absolute;top:5px;left:15pt;
+font-weight:normal;
+font-size:10px;
+height:200px;
+}
+#header{
+position:absolute;top:25px;left:15pt;
+}
+#side{
+position:absolute;top:200px;left:15pt;
+width:200px;
+}
+#content{
+position:absolute;top:200px;left:250px;
+}
+/******************************/
+/*********"デザイン用"*********/
+/******************************/
+#header a{font-size:32pt;font-weight:bold}
+h2{font-size:21pt;margin-bottom:10px;padding:4px 10px;border-left:6px double #eee}
+h2 a:link{color:#eec;text-decoration:none}
+h2 a:visited{color:#ddc;text-decoration:none}
+h2 a:active{color:#e94;text-decoration:underline}
+h2 a:hover{color:#e94;text-decoration:underline}
+h3{margin:20px;padding:4px;border:1px dotted #ccc;width:60%}
+.space{margin:10px}
+#copyright{
+text-align:center;
+margin:20px 0 0 0 ;
+padding:0 0 20px 0;
+font-size:11pt
+}
+.navi{margin:20px 0 20px 40px;}
+.menu{font-size:11pt;margin-bottom:15pt;}
+.menu2{border-bottom:1px dotted #999;font-size:12pt;}
+.menu3{margin-bottom:10pt}
+div.menu li{padding-left:8pt}
+.comment-meta{font-size:9pt;margin-bottom:4pt;}
+li.comment p{font-size:11pt;margin-bottom:9pt;padding-left:15pt}
+.fn{font-style:normal;font-weight:bold;font-size:13pt;color:#aaa}
+.says{font-size:12pt;font-weight:bolod;color:#aaa}
+input{width:400pt;color:#333;background-color:#eee;margin-bottom:15pt}
+.text-area{width:400pt;background:#eee;color:#000;margin-bottom:15pt;border:3px solid #999;padding:5px;line-height:120%}
+ul#recentcomments{list-style-type:none}
+li.recentcomments{font-size:8pt;margin:2pt 0;}
+.children{padding-left:8pt;}
+/******************************/
+/*********"リスト頁用"*********/
+/*******************************
+<style type="text/css">
+#container,#lrflame,#content,#footer{
+text-align:left!important;width:auto!important}
+#side{float:left;margin-left:24px}
+</style>
+*******************************/
+/************"修飾"************/
+/******************************/
+.t5{margin-top:5px!important}
+.b5{margin-bottom:5px!important}
+.t10{margin-top:10px!important}
+.b10{margin-bottom:10px!important}
+.t15{margin-top:15px!important}
+.b15{margin-bottom:15px!important}
+.t20{margin-top:20px!important}
+.b20{margin-bottom:20px!important}
+.t25{margin-top:25px!important}
+.b25{margin-bottom:25px!important}
+.t30{margin-top:30px!important}
+.b30{margin-bottom:30px!important}
+.t40{margin-top:40px!important}
+.b40{margin-bottom:40px!important}
+.bold{font-weight:bold!important}
+.f9{font-size:9px!important}
+.f10{font-size:10px!important}
+.f11{font-size:11px!important}
+.f12{font-size:12px!important}
+.f13{font-size:13px!important}
+.f14{font-size:14px!important}
+.inline{display:inline}
+.clear{clear:all}
+.white  {color:#ffffff;}
+.red    {color:#cc0000;}
+.yellow {color:#cccc00;}
+.blue   {color:#0000cc;}
+.green  {color:#00cc00;}
+dl{margin:20px 0;}
+dt{font-size:16px;font-weight:bold;line-height:150%;color:#eee}
+dd{font-size:14px;margin:2px 10px 30px 0;line-height:150%:color:#ddd}

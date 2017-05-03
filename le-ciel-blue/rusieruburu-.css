@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+html,body,div,ul,li,h1,h2,h3,p,table,tr,th,td{margin:0;padding:0;}
+li{list-style-position:inside}
+body{
+	background:#fff url(ciel-bg.png) repeat-y;
+	font-family:'ＭＳ Ｐゴシック',sans-serif;
+	color:#333333;
+	font-size:0.9em;
+}
+
+
+a:link	{color:#00f;text-decoration:none}
+a:visited	{color:#00f;text-decoration:none}
+a:active	{color:#f00;text-decoration:underline}
+a:hover	{color:#f00;text-decoration:underline}
+
+
+/********************************/
+/************フロント************/
+/********************************/
+
+h1#top{
+	position:static;
+	font-size:2.5em;
+	font-weight:bold;
+	padding:5px 5px 0 25px;
+	margin :25px 5px 10px 25px;
+	text-align:left;
+	border-bottom:3px solid #3c6;
+	width:15em;
+}
+
+div#top{
+	margin:50px 0 0 80px;
+	line-height:1.5em;
+}
+
+div#top p{
+	margin:20px 0;
+	padding:5px; 
+}
+
+div#top div.pane{
+	float:left;
+	width:300px;
+	margin-right:50px;
+}
+
+div#top div.pane p.title{
+	font-weight:bold;
+	margin:0;
+	font-size:1.2em;
+	line-height:1.0em;
+}
+
+div#top div.pane ul{
+	margin:1px 0 30px 0;
+}
+
+/********************************/
+/************メニュー************/
+/********************************/
+div#menu{
+	position: fixed;
+	top:  20px;
+	left: 10px;
+	width:170px;
+	font-size:small;
+}
+div#menu p.title{
+	margin-top:10px;
+	line-height:1.2em;
+	font-weight:bold;
+}
+
+div#menu ul li{
+	list-style-type:none;
+}
+/********************************/
+/**********コンテンツ************/
+/********************************/
+div#contents{
+	position: absolute;
+	top: 20px;
+	left: 200px;
+}
+
+div#contents p{
+	margin:0 0 20px 0;
+	font-size:1em;
+	line-height:1.4em;
+}
+
+.fl{float:left;margin-right:20px}
+
+div#contents p.lu{text-align:right;font-size:0.8em;color:#999;margin:5px 0}
+
+h1{
+	font-size:2em;
+	font-weight:bold;
+	margin-left:20px;
+}
+
+h2{
+	clear: both;
+	margin: 1.0em 0;
+	padding: 0.3em 10px;
+	border: 1px dotted #7070ba;
+	font-size: 1.1em;
+	font-weight: bold;
+	line-height: 1.4em;
+	text-align: left;
+	color: #333;
+}
+
+h3{
+ font-size:1.1em;
+ font-weight:bold;
+ margin:4px 0 2px 20px;
+}
+
+
+.em{font-weight:bold;font-style :normal;}
+.strong{font-weight:bold;font-style :normal;color:#FF0000;}
+
+table{border-collapse:collapse}
+table,tr,th,td{border:1px solid #666;line-height:100%}
+th,td{padding:2px 4px}
+table tr td.n{white-space:nowrap}
+
+.xx-small	{font-size:xx-small!important}
+.x-small	{font-size:x-small!important}
+.small	{font-size:small!important}
+.medium	{font-size:medium!important}
+
+.red	{color:#c00}
+.yellow	{color:#cc0}
+.blue	{color:#00c}
+.green	{color:#0c0}
+.black	{color:#000}
+
+tr.bg-gray *{background:#eee}
+tr.bg-red *{background:#ffe0e0}
+tr.bg-green *, .bg-green{background:#e0ffe0}
+tr.bg-blue *{background:#e0e0ff}
+tr.bg-dark *, .bg-dark{background:#ccc}
+tr.bg-orange *{background:#fec}
+tr.bg-yellow *, .bg-yellow{background:#ffc}
+
+.cb{clear:both}
+
+.m20{margin-top:20px}
+.m30{margin-top:30px}
+.m40{margin-top:40px}
+
+ul.menu {clear:both;padding:3px 6px;border:1px dotted #666;margin:10px 0}
+ul.menu li{display:inline;margin:0 20px 0 0;font-size:small}
+
+
+
+
+
+
+
+
+
+
+

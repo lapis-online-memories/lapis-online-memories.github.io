@@ -1,0 +1,322 @@
+body,div,dl,dt,dd,ul,ol,li,
+h1,h2,h3,h4,h5,h6,
+pre,p,blockquote,table,th,td,hr{
+margin:0;padding:0;font-family:Verdana;
+font-size:12px;color:#ccc;}
+
+body {background : #000 url(image-lapis/bg.png) repeat-y ;line-height:100%}
+
+a:link,a:visited{color: #9933dd ; text-decoration: none }
+a:active,a:hover{color: #ff0000 ; text-decoration: underline }
+
+dl{margin:20px 0;}
+dt{font-size:13px;font-weight:bold;display:list-item;margin:4px 10px 2px 20px;line-height:150%}
+dd{font-size:11px;margin:2px 10px 2px 0;line-height:150%}
+p{font-size:11px;line-height:19px;}
+
+#content ul,#content2 ul{margin:20px 0;line-height:150%}
+#content li,#content2 li{margin-left:20px;list-style-type:disc;line-height:150%;font-size:13px;}
+
+.inline{display:inline}
+.clear{clear:all}
+
+strong{font-weight:bold;font-style:normal;color:#fff;}
+.atama strong{font-weight:bold;font-style:normal;color:#d0d0d0;}
+
+
+/********************************/
+/*************"広告"*************/
+/********************************/
+
+table.list tr td.table-ad,table.list2 tr td.table-ad{/*テーブルの間に割り込ませる広告*/
+ background-color:#000;
+ height:80px;
+}
+
+p.sporin{font-family:"MS UI Gothic";font-size:13px;color:#333;
+text-decoration:underline;}
+
+
+.spon{margin:0;color:#aaa;
+font-family:"MS UI Gothic";font-size:13px;
+text-decoration:underline;}
+.spont{margin:0;color:#ccc;
+font-family:"MS UI Gothic";font-size:13px;
+text-decoration:underline;}
+
+.right{margin:5px 0 0 5px;float:right}
+
+/********************************/
+/*******"外側"&"Copyright"*******/
+/********************************/
+div.soto{position:absolute;top:5px;left:670px;}
+div.fixed{position:fixed}
+
+.copyright{/*Copyright (C) 2006-2008 某司教 all rights reserved*/
+color:#888;
+line-height:16px;
+font-weight:bold;
+}
+
+.soto li a:link, .soto li a:visited{color: #1122dd ; text-decoration: none ; line-height: 14px}
+.soto li a:active, .soto li a:hover{color: #dd0022 ; text-decoration: underline ; line-height: 14px}
+
+
+/********************************/
+/**********"h1"&"atama"**********/
+/********************************/
+h1 a:link, h1 a:visited, h1 a:hover, h1 a:active{color:#bdbdbd;font-weight:normal;
+line-height:100%;margin:2px;text-decoration:none}
+
+
+.atama{
+position: absolute;top: 20px;left:0px;
+width:618px;
+_width:620px;
+height:80px;
+}
+
+.logo{/*サイトロゴの修飾*/
+font-family:HGｺﾞｼｯｸM;
+font-size: 50px;
+line-height: 56px;
+margin-left: 12px;
+}.logo a{color: #cccccc ; text-decoration: none }
+
+
+/********************************/
+/************メニュー************/
+/********************************/
+#mokuji{
+position: absolute;
+top: 120px;
+left: 5px;
+width:125px;
+font-size:13px;
+line-height:15px;
+}
+iframe.mokuji{/*メニュー。左側の部分ね*/
+width:130px;
+height:60em;
+}
+div.menu{/*メニューの項目*/
+font-family:monospace;
+margin:4px 0 2px 0;
+color:#ddd;
+font-size:12px;
+line-height:15px;
+text-decoration:underline
+}
+
+#mokuji ul li{
+font-size:13px;
+line-height:15px;
+padding-left:7px;
+list-style-type:none;
+}
+
+/********************************/
+/**********body#bg2**************/
+/*通常の幅は440pxだけど500pxにしたいときはコレ！*/
+/********************************/
+body#bg2 {background : #000 url(image-lapis/bg2.png) repeat-y ;line-height:100%}
+body#bg2 #content{position:absolute; top:120px; left:145px;
+width:500px;
+_width:502px;
+}
+body#bg2 div.soto{left:730px!important}
+
+
+/********************************/
+/**********コンテンツ************/
+/********************************/
+
+#content{position:absolute; top:120px; left:145px;
+width:440px;
+_width:442px;
+}
+
+#content2{position:absolute; top:120px; left:145px;
+}
+
+.t5{margin-top:5px!important}
+.b5{margin-bottom:5px!important}
+.t10{margin-top:10px!important}
+.b10{margin-bottom:10px!important}
+.t15{margin-top:15px!important}
+.b15{margin-bottom:15px!important}
+.t20{margin-top:20px!important}
+.b20{margin-bottom:20px!important}
+.t25{margin-top:25px!important}
+.b25{margin-bottom:25px!important}
+.t30{margin-top:30px!important}
+.b30{margin-bottom:30px!important}
+.t40{margin-top:40px!important}
+.b40{margin-bottom:40px!important}
+.b{font-weight:bold!important}
+.f14{font-size:14px!important}
+
+.t0{/*コンテンツの更新日時のところ*/
+line-height:14px;color:#999;margin:0;
+}
+.t1{/*コンテンツのタイトル*/
+font-family:HGｺﾞｼｯｸM;
+font-size:24px;
+line-height:30px;
+font-weight:normal;
+padding:3px 50px 0 0;
+margin:3px;
+text-align:center;
+color:#ddd;
+}
+#content2 .t1{
+padding:3px 50px 15px 90px;
+text-align:left;
+}
+
+.t2{/*見出し。司教レベル上げ頁の"CLASS 1～"の部分に使用*/
+font-size:16px;
+font-weight:bold;
+border:1px solid;
+padding:3px 10px;
+margin:3px;
+color:#ddd;
+}
+.t3{/*見出し。司教レベル上げ頁の"【1】Lv～"の部分に使用*/
+font-size:16px;
+font-weight:bold;
+margin:4px 0 2px 0;
+color:#ddd;
+}
+
+.sub-t2{/*見出し。家門戦ルールのページで使用*/
+width:300px;
+font-size:140%;
+border-width:0px;
+border-bottom:1px solid;
+padding:0px;
+color:#6699FF;
+}
+
+
+
+
+
+
+
+
+
+
+p.hitokoto{/*一言更新*/
+ border:1px dashed #777777;
+ width:300px;
+ margin:10px ;
+ padding:5px;
+}
+
+p.ad{/*広告用。今は使ってない*/
+ font-size:80%;
+ background-color:#444444;
+ text-align:left;
+}
+
+.xx-small{ font-size : xx-small ;}
+.x-small{ font-size : x-small ;}
+.small{ font-size : small ;}
+.medium{ font-size : medium ;}
+
+
+
+
+
+
+
+table{/*テーブルの基本はcollapse*/
+ border-collapse : collapse ; 
+}
+table.skill{/*司教スキル頁のスキル表に使用*/
+ text-align:center;
+ font-size:101%;
+ border:2px solid #999999;
+}
+table.skill tr{/*同じく司教スキル頁のスキル表に使用*/
+ border:2px solid #999999;
+}
+table.skill tr td{/*さらに同じく司教スキル頁のスキル表に使用*/
+ padding:3px 9px;
+ border:2px solid #999999;
+}
+table.sute,table.sute tr,table.sute tr td{/*司教ステ振り頁のスキル表に使用*/
+ text-align:center;
+ font-size:x-small;
+ padding:2px 3px;
+ border:2px solid #999999;
+}
+
+
+
+
+table.list,table.list tr,table.list tr td{/*データリストに使用*/
+ text-align:left;
+ font-size:x-small;
+ padding:2px 3px;
+ border:3px solid #000000;
+ background-color:#555555;
+}
+/*listの色分け*/
+table.list tr td.l-0{background-color:#f0f000;font-weight:bold;color:#000000;
+width:1em;}
+table.list tr.l-1 td{background-color:#b97a00;font-weight:bold;color:#000000;}
+table.list tr.l-1 td.l-kado{background-color:#000000;}
+table.list tr td.l-2{background-color:#555555;font-weight:bold;}
+table.list tr td.l-3{background-color:#000000;color:#aaaaaa;}
+
+
+table.list2,table.list2 tr,table.list2 tr td,table.list2 tr TH{/*データリストに使用*/
+ text-align:left;
+ font-size:x-small;
+ padding:1px 1px;
+ border:2px solid #000000;
+ background-color:#555555;
+}
+/*list2の色分け*/
+table.list2 tr td.l-0{background-color:#f0f000;font-weight:bold;color:#000000;
+width:1em;text-align:center;vertical-align:top;}
+table.list2 tr.l-1 td{background-color:#b97a00;font-weight:bold;color:#000000;}
+table.list2 tr.l-1 td.l-kado{background-color:#000000;}
+table.list2 tr TH{font-weight:bold;}
+
+/*list3の色分け**ドロップデータ用*/
+table.list2 tr td.l-0{background-color:#f0f000;font-weight:bold;color:#000000;
+width:1em;text-align:center;vertical-align:top;}
+table.list2 tr TH{background-color:#b97a00;font-weight:bold;color:#000000;}
+
+p.link{/*リンクページのリンク先の説明*/
+ font-size:xx-small;
+ padding:0px 0 4px 20px;
+}
+
+p.masu {/*移動距離ページの移動範囲などに使用*/
+ font-size : 12px ;
+ font-family:monospace;
+ line-height:12px!important;
+ text-align:left;
+ color:#111111;
+ width:234px;
+}
+
+div.kbbs{/*ゲーム内掲示板の画像をはめ込む枠*/
+ margin :0;
+ padding:0;
+ width  :565px;
+ height :484px;
+ line-height:100%;
+}
+div.kbbs image{margin:0;padding:0;}
+
+.white  {color:#ffffff;}
+.red    {color:#cc0000;}
+.yellow {color:#cccc00;}
+.blue   {color:#0000cc;}
+.green  {color:#00cc00;}
+

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>ラピスオンライン(LapisOnline) 司教の洞(跡地) - 計算あれこれ</title>
+
+<meta name="description" content="OnlineGameラピスオンラインのファンサイト「司教の洞」－ゲームデータ・攻略情報など。ステータスやダメージの計算方法について" />
+<meta name="keywords" content="MMORPG,ネトゲ,ネットゲーム,オンラインゲーム,ラピスオンライン" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+
+<link rel="stylesheet" href="lapis.css" type="text/css" />
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-69831255-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+
+<h1>オンラインゲーム"ラピスオンライン"のデータ･攻略 - 計算あれこれ</h1>
+
+
+<!--content★★★--><div id="content">
+
+<p class="t0">2007/11/18</p>
+<p class="t1">計算あれこれ</p>
+<p class="t5 b20 b white">
+攻撃力やダメージなどの計算方法。<br />
+間違い・勘違いがかなりあると思うので、あまり信用しないでください。
+</p>
+
+
+
+
+<p class="t2 b5">ステータス計算</p>
+<p>
+（値＝基本値×補正値という形になってます）<br />
+●攻撃力＝基本攻撃力×攻撃補正値<br />
+＝基本攻撃力×(1+基盤A/100+基盤B/300)<br />
+●防御力＝基本防御力×(1+CON/100)<br />
+●魔法攻撃＝基本魔法攻撃×(2+INT/50+WIS/150)/3<br />
+●魔法防御＝基本魔法防御×(1+REG/100+WIS/200)
+</p>
+<p class="t15">
+※基本攻撃力は、装備の攻撃力。
+ダイヤが入っている場合は、それにダイヤの数×1.5を切り上げた数を足す。
+エメラルドや白金や真珠も、同じ。<br />
+(+1=2,+2=3,+3=5,+4=6,+5=8,+6=9,+7=11,+8=12,+9=14)<br />
+※基盤Aは武器の場合、その武器の基盤ステータス<br />
+宝石はSTR<br />
+※基盤Bは弓はSTR。弓以外の職はDEX<br />
+※弓兵が、基盤DEXの弓を装備していない状態だと、基盤A=STRになるが、
+弓を装備すると、基盤A=DEXになる。装備している武器の基盤で変わってくる。<br />
+赤竜王の杖を装備した場合は、基盤A=INT,B=DEXとなる(武器以外も連動して基盤が変わる)。<br />
+※基本***は以下同様<br />
+※表示されるステータスは、小数点以下は見えない<br />
+※計算と数値違うことも稀にあるけど、数値が途中で丸められてるからかと。<br />
+</p>
+
+<p class="t3 b5">(例)STR50,DEX15の歩兵が、攻撃力170~180(ダイア+7)の剣と、ダイア+5の兜と、ダイア+5の鎧と、ダイア＋6のブーツを装備した場合の攻撃力</p>
+<p>
+基本攻撃力＝(170~180+11)+11+8+8+9＝217~227<br />
+攻撃補正値＝1＋50/100+15/300＝1.55<br />
+攻撃力＝217~227×1.55＝336.35~351.85<br />
+</p>
+
+
+
+
+<p class="t2 b5">ダメージ計算</p>
+<p>
+物理攻撃ダメージ＝(攻撃力×攻撃補助倍率－防御力×防御補助倍率)×ダメージ倍率<br />
+魔法攻撃ダメージ＝(魔法攻撃＋基本魔法攻撃力)－魔法防御力×魔法防御補助倍率<br />
+クリティカル時のダメージ＝ダメージ×1.5
+</p>
+<p class="t20">
+※攻撃補助倍率は、ブレスLv6＝1.2　HSLv6＝1.2　バー作Lv6＝1.35など<br />
+※防御補助倍率は、ブレスLv6が1.2　EGLv6＝1.25　水壁Lv6＝1.25など<br />
+※ダメージ倍率は、通常攻撃＝1　ジェノ＝1.44　チャージ＝1.5など<br />
+※ダメージ倍率は魔法攻撃に無いかというと、ある。
+魔法使いは1、飛兵は1.25、司教は0.75？とかこんな感じだったかな。<br />
+(↑ごめん、これは勘違いが農耕かもしれない)。<br />
+でも魔法使い以外の職は知らなくても大したこと無いのであんまり関係が無い。
+あと魔法使いは無いけど、司教の毒などは必ず一定のダメージ以上は出る。<br />
+※補助が複数ある場合は倍率は足し算ではなく掛け算で計算<br />
+※小数点以下のダメージは切り捨て。ただし0.…の場合は1。
+</p>
+
+<p class="t3">(例)攻撃力650でブレスとHSが付きの飛兵のジェノを、ブレス付きの防御300の相手に使った場合</p>
+<p class="t5 b20">
+ダメージ＝[650×(1.2×1.2)－300×1.2]×1.44＝829(クリティカルなら1244)
+</p>
+
+<p class="t2 t40">コメント</p>
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+	this.page.url = location.href.replace(/#.*/, '').replace(/\?.*/, '').replace(/lapis.2-f.info/, 'lapis-online-memories.github.io').replace(/.html?$/, '');
+	this.page.identifier = "lapis2finfokaisen";
+};
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = '//lapis-online-memories.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+<!--/content★★★--></div>
+
+
+
+
+
+<!--mokuji★★★--><div id="mokuji">
+
+<ul>
+<li><a href="./">司教の庵トップ</a></li>
+<li><a href="./index_v1.htm">司教の洞(v1跡地)トップ</a></li>
+<li><a href="./v2/">LapisOnline v2</a></li>
+</ul>
+
+<div class="menu">司教</div>
+<ul>
+<li><a href="n-skill.htm">スキル</a></li>
+<li><a href="n-level.htm">レベル上げ</a></li>
+<li><a href="n-level2.htm">レベル上げ2</a></li>
+<li><a href="n-sute.htm">ステ振り</a></li>
+<li><a href="n-idou.htm">移動距離とか</a></li>
+<li><a href="n-int100.htm">INT100司教</a></li>
+<li><a href="n-sekiryu.htm">赤杖司教</a></li>
+<li><a href="yami-test.htm">ナイトメア</a></li>
+</ul>
+<div class="menu">他の職</div>
+<ul>
+<li><a href="w-level.htm">魔レベル上げ</a></li>
+<li><a href="hihei.htm">飛兵レベル上げ</a></li>
+<!-- 　</A href="./w-level.htm">魔スキル</a></li> -->
+<li><a href="hihei-skill.htm">飛兵スキル</a></li>
+</ul>
+<div class="menu">データ</div>
+<ul>
+<li><a href="list-goods.htm">消耗品</a></li>
+<li><a href="list-acce.htm">アクセサリ</a></li>
+<li><a href="list-equip1-26.htm">装備(Lv1-26)</a></li>
+<li><a href="list-equip36-66.htm">装備(Lv36-66)</a></li>
+<li><a href="list-equip-special.htm">装備(その他)</a></li>
+<li><a href="list-e.htm">E装備</a></li>
+<li><a href="list-equip-pre.htm">栄光装備</a></li>
+<li><a href="drop1.htm">ドロップ1</a></li>
+<li><a href="drop2.htm">ドロップ2</a></li>
+</ul>
+<div class="menu">色々</div>
+<ul>
+<li><a href="kaosia.htm">カオシア村</a></li>
+<li><a href="kamon.htm">家門加入</a></li>
+<li><a href="kakou.htm">装備の変換</a></li>
+<li><a href="teki.htm">敵の行動パターン</a></li>
+<li><a href="mame.htm">豆知識？</a></li>
+<li><a href="pengin.htm">ペンギン狩り</a></li>
+<li><a href="sute.htm">ステータス</a></li>
+<li><a href="ko-zyo.htm">攻城戦の何か</a></li>
+<li><a href="registring-test.htm">レジリンの怪</a></li>
+<li><a href="zokusei.htm">属性について</a></li>
+<li><a href="keisan.htm">計算あれこれ</a></li>
+<li><a href="kusa.htm">貴重な薬草</a></li>
+<li><a href="paz.htm">パズズ</a></li>
+<li><a href="link.htm">リンク</a></li>
+</ul>
+<!--/mokuji★★★--></div>
+
+
+
+<!--atama★★★--><div class="atama">
+<p class="logo"><a href="./index_v1.htm">司教の洞(v1跡地)</a></p>
+　　　私は<strong>ラピスオンライン</strong>の某司教。データとか適当に出してきます。以上。
+<!--/atama★★★--></div>
+
+
+
+<!--soto★★★--><div class="soto"><div class="fixed">
+<p class="copyright">Copyright (C) 2006-2008 某司教 all rights reserved</p>
+
+
+
+
+<ul>
+<li><a href="hihei-skill.htm">飛兵スキル</a></li>
+<li><a href="list-equip1-26.htm">装備(Lv1-26)</a></li>
+<li><a href="list-equip36-66.htm">装備(Lv36-66)</a></li>
+<li><a href="list-equip-special.htm">装備(その他)</a></li>
+<li><a href="drop1.htm">ドロップ1</a></li>
+</ul>
+<ul class="t15">
+<li><a href="./index_v1.htm">司教の洞TOPへ</a></li>
+<li><a href="http://lapis.mgame.jp/">ラピスオンライン公式サイト</a></li>
+</ul>
+<!--/soto★★★--></div></div>
+
+<script id="dsq-count-scr" src="//lapis-online-memories.disqus.com/count.js" async></script>
+</body></html>
+
+

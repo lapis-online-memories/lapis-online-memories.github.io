@@ -1,0 +1,1 @@
+Disallow: /hexo_lapis/
